@@ -15,11 +15,24 @@
 3) 정리하자면 리액트는 라이브러리, nextjs는 프레임워크
 4) nextjs에 맞게 코드를 짜야함
 
+# 1.1 Pages
+1) pages 폴더 안에 js를 만들면 next js가 파일의 이름을 가져다가 url로 씀
+    - 파일의 이름은 그대로 쓰지만 파일 안의 component의 이름은 중요하지 않음
+    - export default만 잘해주면 됨
+2) 예외 사항은 있음
+    - index는 무조건 최초 홈으로만 이동함
+3) jsx를 쓴다면 react를 import 안해도 됨(물론 useState, useEffect를 쓸 경우에는 해야함. import React from "react" 이런식으로만 안해도 된다는거임)
+
 # 심화 과정 내가 찾아봐야할것들?
-- Static Reneration
+- Static Regenration
+    -> 뭔가 정적으로 데이터 다루는거 같음
 - Server Side Rendering(심화가 있나?)
 - Incremental Static Regeneration
+    -> https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
+    -> https://merrily-code.tistory.com/173
 - Stateless serverless authentication
+    -> https://nextjs.org/docs/authentication
+    -> https://next-auth.js.org/getting-started/example
 - PlanetScale's Serverless SQL Database with Prisma
 - Using Cloudflare(streaming, image hosting)
 - TailwindCSS v3 UI Build
