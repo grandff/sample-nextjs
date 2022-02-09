@@ -23,6 +23,14 @@
     - index는 무조건 최초 홈으로만 이동함
 3) jsx를 쓴다면 react를 import 안해도 됨(물론 useState, useEffect를 쓸 경우에는 해야함. import React from "react" 이런식으로만 안해도 된다는거임)
 
+# 1.2 Static Pre Rendering
+1) 앱에 있는 페이지들은 server side에서 rendering 되서 사용자에게 보여짐
+2) 만약 자바스크립트를 끄면 안되는 리액트나 인터넷속도를 느리게 할 경우 페이지 로딩이 느려지는건 전부 client side rendering이 되서 그런거임
+	- next는 이런 문제 해결
+3) hydration이 가능함
+	- hydration : react.js를 프론트엔드 안에서 실행
+	- SEO에도 좋다고함 (meta tag 설정하는걸 말하는듯)
+
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
     -> 뭔가 정적으로 데이터 다루는거 같음
