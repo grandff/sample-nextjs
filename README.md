@@ -36,6 +36,14 @@
 2) a에는 href가 들어가면 안됨. 클래스나 기타 attribute는 a tag에 적어야함
 3) next/router를 통해 location에 대한 정보를 얻을 수 있음
 
+# 1.4 CSS Modules
+1) css 적용을 위해 module.css 사용
+2) class 적용할때는 className으로 사용
+3) 만약 두개 이상을 쓰려면 `${}` 로 연결하거나 join으로 연결하는 방법이 있음
+
+# 1.5 Styled JSX
+
+
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
     -> 뭔가 정적으로 데이터 다루는거 같음
