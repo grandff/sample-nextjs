@@ -30,6 +30,11 @@
 3) hydration이 가능함
 	- hydration : react.js를 프론트엔드 안에서 실행
 	- SEO에도 좋다고함 (meta tag 설정하는걸 말하는듯)
+	
+# 1.3 Routing
+1) next.js 는 next/link와 a를 결합해서 사용함
+2) a에는 href가 들어가면 안됨. 클래스나 기타 attribute는 a tag에 적어야함
+3) next/router를 통해 location에 대한 정보를 얻을 수 있음
 
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
