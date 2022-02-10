@@ -10,8 +10,15 @@ export default function NavBar(){
 				<a className={`${styles.link} ${router.pathname === "/" ? styles.active : ""}`}>Home</a>
 			</Link>
 			<Link href="/about">
-				<a className={[styles.link, router.pathname === "/about" ? styles.active : ""].join(" ")}>About</a>
+				<a className={[styles.link, router.pathname === "/about" ? "newactive" : ""].join(" ")}>About</a>
 			</Link>
+			<style jsx>
+			{`
+				.newactive{
+					color : black;
+				}
+			`}
+			</style>
 		</nav>
 	)
 }
