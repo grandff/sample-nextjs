@@ -60,6 +60,12 @@
 5) _app.js 에 Layout 컴포넌트를 추가하면 기본 구성 완료
 - style 까지만 추가하고 커밋
 
+
+# 2.1 Fetching Data
+1) themoviedb 에서 데이터 가져올거임
+	- api key 발급 해놨음
+2) index 에서 list 보여지도록 처리
+
 # 이거 샘플은 stackblitz에서 해보기
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
@@ -77,5 +83,7 @@
 	- npx create-next-app -e with-tailwindcss nextjs-tailwind
 	- https://cpro95.tistory.com/531
 	- 위에 링크에 설명 개잘되어있음 반응형 네비게이션 메뉴 만드는거
+	- https://tailblocks.cc/
+	- 무친타일블록스 여기서 다짜줌 개사기
 - React 18 functions
     - Suspense, SSR STreaming, React Server Components
