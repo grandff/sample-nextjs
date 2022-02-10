@@ -45,6 +45,13 @@
 1) next.js 고유 방법으로 style 태그 안에 jsx prop을 추가해주면 됨
 2) 각 컴포넌트별로 독립되어있기때문에 서로 영향을 안미침
 
+# 1.6 Custom App
+1) Global Styles 추가하려면 _app.js 에 추가하기
+2) 그 외 공통 컴포넌트를 여기다가 추가하면 됨
+3) 일반 css 파일도 import 가능(pages에 하려면 module.css 만 가능함. 그외는 에러남.)
+
+
+# 이거 샘플은 stackblitz에서 해보기
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
     -> 뭔가 정적으로 데이터 다루는거 같음
