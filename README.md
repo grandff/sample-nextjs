@@ -51,6 +51,15 @@
 3) 일반 css 파일도 import 가능(pages에 하려면 module.css 만 가능함. 그외는 에러남.)
 
 
+# 2.0 Patterns
+1) 가장 많이 쓰는 패턴인 Layout 패턴 사용
+2) components에 Layout을 만들고 공통으로 사용하는 모듈들을 다 넣을거임
+3) 헤더를 처리해줄 Seo.js 생성
+	- 실습때는 next-seo library 사용해보기
+4) index, about에 seo 추가하기
+5) _app.js 에 Layout 컴포넌트를 추가하면 기본 구성 완료
+- style 까지만 추가하고 커밋
+
 # 이거 샘플은 stackblitz에서 해보기
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
@@ -65,5 +74,8 @@
 - PlanetScale's Serverless SQL Database with Prisma
 - Using Cloudflare(streaming, image hosting)
 - TailwindCSS v3 UI Build
+	- npx create-next-app -e with-tailwindcss nextjs-tailwind
+	- https://cpro95.tistory.com/531
+	- 위에 링크에 설명 개잘되어있음 반응형 네비게이션 메뉴 만드는거
 - React 18 functions
     - Suspense, SSR STreaming, React Server Components
