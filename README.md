@@ -79,6 +79,13 @@
 1) server 단에서 렌더링을 끝내고 화면에 보여지도록 server side rendering 사용
 2) getServerSideProps 사용 이름은 무조건 고정
 
+# 2.5 Dynamic Routes
+1) [] 안에 변수를 넣어서 파일 생성하면 됨
+2) routes에 대해 다시 한번 정리하자면
+	- movie라는 url을 만들고 싶다? movie라는 파일 추가
+	- 만약 movies/all 폴더가 있을경우 분기처리는? index.js와 all.js 두개 만들면됨
+	- 페이지가 하나면 폴더를 만들 필요 없으나 여러개면 만듬
+
 # 실습 과정
 ## 사전준비 목록
 #### api 
