@@ -6,12 +6,17 @@ import Link from "next/link";
 export default function Home({results}){	
 	const router = useRouter(); // router hook을 이용한 페이지 이동
 	const onClick = (id, title) => {
+		/*
 		router.push({
 			pathname : `/movies/${id}`,
 			query : {
 				title : `${title}`
 			}
 		}, `/movies/${id}`) // query param 숨기기
+		*/
+		
+		// catch all 기법
+		router.push(`/movies/${title}/${id}`)
 	}
     return (				
 		<div className = "container">
@@ -21,13 +26,7 @@ export default function Home({results}){
 					<div className="movie" key={movie.id} onClick={() => onClick(movie.id, movie.original_title)}>
 						<img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
 						<h4 style={{color : "black"}}>
-							<Link href={{
-								pathname : `/movies/${movie.id}`,
-								query : {
-									title : movie.original_title
-								}
-							}} 
-								as = { `/movies/${movie.id}`}>
+							<Link href={`/movies/${movie.original_title}/${movie.id}`}>
 								<a>
 									{movie.original_title}
 								</a>
