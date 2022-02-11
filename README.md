@@ -73,7 +73,11 @@
 4) 둘다 config.js 에 추가 가능
 5) config 파일을 수정하면 서버재시작을 필수로 해야함
 6) 만약 여러개 파라미터가 들어간다면? &를 인코딩해버리니까
-	- encodeURIComponent("&")
+	- encodeURIComponent("&") 사용
+	
+# 2.3 Server Side Rendering
+1) server 단에서 렌더링을 끝내고 화면에 보여지도록 server side rendering 사용
+2) getServerSideProps 사용 이름은 무조건 고정
 
 # 실습 과정
 ## 사전준비 목록
