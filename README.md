@@ -66,6 +66,32 @@
 	- api key 발급 해놨음
 2) index 에서 list 보여지도록 처리
 
+# 2.2 Redirect and Rewrite
+1) API Key를 숨겨야함
+2) Next.js 는 기본적으로 Redirect와 Rewirte를 제공함
+3) REdirect는 말그대로 리다이렉트하는거고 Rewrite는 다른 url로 덮을 수 있음
+4) 둘다 config.js 에 추가 가능
+5) config 파일을 수정하면 서버재시작을 필수로 해야함
+6) 만약 여러개 파라미터가 들어간다면? &를 인코딩해버리니까
+	- encodeURIComponent("&")
+
+# 실습 과정
+## 사전준비 목록
+#### api 
+- 대신증권 API 사용하기
+#### 레이아웃
+#### 디자인
+#### 기타 참조
+
+### 주식 API 사용해서 하기 
+### 레이아웃은 tailblocks를 사용해서 작업
+### Incremental Static Regenration 사용해보기 (아니면 그냥 Static Regenration만 ?)
+### SWR을 사용해서 데이터 fetch하기
+### SEO 설정
+### chart나 이미지 사용해보기 (이미지는 next로 무조건)
+### github 로그인 기능까지 만들어보기 (iron-session ? next-auth ?? )
+### vercel 배포까지
+
 # 이거 샘플은 stackblitz에서 해보기
 # 심화 과정 내가 찾아봐야할것들?
 - Static Regenration
@@ -86,4 +112,4 @@
 	- https://tailblocks.cc/
 	- 무친타일블록스 여기서 다짜줌 개사기
 - React 18 functions
-    - Suspense, SSR STreaming, React Server Components
+    - Suspense, SSR Streaming, React Server Components
